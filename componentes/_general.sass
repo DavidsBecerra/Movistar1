@@ -1,0 +1,35 @@
+*
+  margin: 0px
+  padding: 0px
+  font-family: "Poppins", sans-serif
+
+  
+/*variables*/
+$main-color1: rgb(52, 130, 212)
+$main-color2: green
+$maincolor3: white 
+$font-colormain: #666666
+$Background-img1: url("movistar.png")
+
+/*Mixin*/
+
+@mixin display($display: flex, $justify: center, $align: center)  
+  display: $display 
+  justify-content: $justify 
+  align-items: $align
+
+/*@mixin plans()
+  @if Background-color == $main-color1
+    .plans-fija 
+      display: none
+    .plans-internet
+      display: none 
+  @else 
+    $background-color: white 
+
+    /*trate de hacer un if para las cajas de los planes movil, fija e internet. Para hacer que cuando el mouse estuviese por encima de la caja activando el hover, se mostrase el plan en especifico pero al final me quede sin tiempo 
+
+
+
+
+  

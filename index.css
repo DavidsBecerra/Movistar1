@@ -1,0 +1,242 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*variables*/
+/*Mixin*/
+/*@mixin plans()
+ * @if Background-color == $main-color1
+ *  .plans-fija 
+ *    display: none
+ *  .plans-internet
+ *    display: none 
+ * @else 
+ *  $background-color: white 
+ *
+ *  /*trate de hacer un if para las cajas de los planes movil, fija e internet. Para hacer que cuando el mouse estuviese por encima de la caja activando el hover, se mostrase el plan en especifico pero al final me quede sin tiempo  */
+.top-head {
+  display: none;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 55px;
+}
+
+.search div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+}
+
+.Display-none {
+  display: none;
+}
+
+.green-button {
+  padding: 10px 15px;
+  background-color: #5bc500;
+  color: white;
+  border-radius: 15px;
+}
+
+.fa-shop {
+  padding: 10px 15px;
+  border: solid 1px;
+  border-radius: 15px;
+}
+
+.photo {
+  background-image: url("movistar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.photo div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  height: 500px;
+}
+.photo div i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: white;
+  border-radius: 100%;
+  background-color: rgba(165, 165, 165, 0.046);
+}
+
+.photo div i:hover {
+  color: grey;
+  background-color: rgba(165, 165, 165, 0.256);
+}
+
+.font-tittle {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666666;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 25px 10px;
+}
+
+.bluebox {
+  background-color: rgb(52, 130, 212);
+  color: white;
+  padding: 25px 30px;
+  border-radius: 15px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.bluebox2 {
+  background-color: white;
+  color: #666666;
+  padding: 15px 20px;
+  border-radius: 15px;
+  gap: 10px;
+}
+
+.bluebox2:hover {
+  background-color: rgb(52, 130, 212);
+  color: white;
+}
+
+.bluebox3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(52, 130, 212);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  gap: 10px;
+}
+
+.font {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666666;
+  padding: 15px 20px;
+}
+
+.plans {
+  padding: 25px;
+}
+
+.plans-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plans-button button {
+  background-color: rgb(4, 27, 50);
+  color: white;
+  border-radius: 20px;
+  padding: 15px 25px;
+  cursor: pointer;
+}
+
+.footer-button-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 25px;
+}
+
+.footer-button {
+  background-color: rgb(52, 130, 212);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 15px;
+  border: none;
+}
+
+.footer {
+  background-color: rgb(156, 156, 156);
+  border-radius: 15px 15px 0px 0px;
+  padding: 15px 25px;
+  color: white;
+}
+
+.last {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.at {
+  padding: 25px 0px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .top-head {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 11px;
+    height: 10px;
+    background-color: #0b2739;
+    color: white;
+    padding: 10px 55px;
+  }
+  .Display-none {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .central-div {
+    color: #666666;
+  }
+  .green-button1 {
+    padding: 10px 15px;
+    background-color: #5bc500;
+    color: white;
+    border-radius: 15px;
+  }
+  .green-button {
+    display: none;
+  }
+  .left-div i {
+    display: none;
+  }
+  .bluebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .plans {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    padding: 15px 25px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .last {
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=index.css.map */

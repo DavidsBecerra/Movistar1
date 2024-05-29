@@ -1,0 +1,179 @@
+@import "./componentes/_general.sass"
+
+.top-head
+  display: none
+  
+.search
+  @include display(flex, space-between, center)
+  padding: 18px 55px
+   
+.search 
+  div 
+    @include display()
+    gap: 11px
+
+.Display-none
+  display: none
+
+.green-button
+  padding: 10px 15px
+  background-color: #5bc500
+  color: white
+  border-radius: 15px
+
+.fa-shop
+  padding: 10px 15px
+  border: solid 1px
+  border-radius: 15px
+
+.photo
+  background-image: $Background-img1
+  background-size: cover
+  background-repeat: no-repeat
+
+.photo 
+  div
+    @include display (flex, space-between, center)
+    padding: 15px 
+    height: 500px
+    i
+      @include display 
+      padding: 30px
+      color: $maincolor3
+      border-radius: 100%
+      background-color: rgba(165, 165, 165, 0.046)
+
+.photo
+  div
+    i:hover
+      color: grey
+      background-color: rgba(165, 165, 165, 0.256)
+
+.font-tittle
+  padding: 20px 10px
+  @include display 
+  color: $font-colormain
+
+.options 
+  @include display 
+  gap: 15px
+  padding: 25px 10px
+
+.bluebox
+  background-color: $main-color1
+  color: $maincolor3
+  padding: 25px 30px
+  border-radius: 15px
+  gap: 10px
+  cursor: pointer
+
+.bluebox2
+  background-color: $maincolor3
+  color: $font-colormain
+  padding: 15px 20px
+  border-radius: 15px
+  gap: 10px
+
+.bluebox2:hover
+  background-color: $main-color1
+  color: $maincolor3
+
+.bluebox3 
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center 
+  background-color: $main-color1
+  color: $maincolor3
+  padding: 15px 20px
+  border-radius: 15px
+  gap: 10px
+
+.font
+  @include display
+  color: $font-colormain
+  padding: 15px 20px
+
+.plans
+  padding: 25px
+
+.plans-button
+  @include display 
+  button
+    background-color: rgb(4, 27, 50)
+    color: white
+    border-radius: 20px
+    padding: 15px 25px
+    cursor: pointer
+
+.footer-button-section 
+  @include display
+  padding: 25px 25px
+
+.footer-button 
+  background-color: $main-color1
+  color: $maincolor3
+  padding: 15px 25px 
+  border-radius: 15px
+  border: none
+
+.footer
+  background-color: rgb(156, 156, 156)
+  border-radius: 15px 15px 0px 0px
+  padding: 15px 25px
+  color: $maincolor3
+
+.last
+  display: flex
+  flex-direction: column
+  gap: 20px
+  
+.at
+  padding: 25px 0px
+
+.pointer
+  cursor: pointer  
+
+@media only screen and (min-width: 768px)
+  .top-head
+    @include display(flex, left, center)
+    gap: 11px
+    height: 10px
+    background-color: #0b2739
+    color: $maincolor3
+    padding: 10px 55px
+  
+  .Display-none
+    @include display 
+  
+  .central-div 
+    color: $font-colormain
+  
+  .green-button1
+    padding: 10px 15px
+    background-color: #5bc500
+    color: white
+    border-radius: 15px
+
+  .green-button
+    display: none
+
+  .left-div
+    i
+      display: none
+
+  .bluebox
+    @include display 
+
+  .plans
+    display: grid
+    grid-template-columns: 35% 35% 30%
+    padding: 15px 25px
+  
+  .footer
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+
+  .last
+      align-items: center
+      justify-content: center
